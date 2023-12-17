@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "View User Info";
+    var userName = (string)ViewBag.Username;
+    var roles = (List<string>)ViewBag.Roles;
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>User info:</p>
+<p>Username -> @userName</p>
+<p>Roles -> @(string.Join(";",roles))</p>
